@@ -1,0 +1,410 @@
+
+.zoom-out {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#nav {
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 75px;
+}
+
+#nav p {
+    float: left;
+    margin: 0;
+    line-height: 40px;
+}
+
+#nav ul {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#nav li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+#nav li#contact a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #060606;
+}
+
+#nav li#contact a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#nav li a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+
+#button {
+    text-decoration: none;
+    width: 327px;
+    text-align: center;
+    background: #060606;
+    border-radius: 8px;
+    padding: 25px 5px;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+    margin: 50px auto;
+}
+
+#button:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.home-description h3, h1, h4 {
+    margin: 0;
+}
+
+.home-description h3 {
+    font-family: 'Nokora', sans-serif;
+    font-weight: 100;
+}
+
+.home-description h4 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: lighter;
+}
+
+.home-description h1.prompt {
+    font-family: 'Prompt', sans-serif;
+}
+
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 234px;
+}
+
+.grid-item-right img {
+    float: right;
+    
+    height:450px;
+}
+
+.grid-item-left {
+    font-size: 3.5em;
+    padding: 20px;
+}
+
+.about {
+    opacity: 0.3;
+    padding: 20px;
+    background-color: #181818;
+}
+
+.about h3 {
+    color: whitesmoke;
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #121212; /* Dark mode background */
+    color: #ffffff; /* Light text */
+}
+
+#nav {
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 75px;
+}
+
+#nav p {
+    color: white;
+}
+
+#nav li a {
+    color: white;
+}
+
+#nav li a:hover {
+    color: #d3d3d3; /* Greyish white */
+    text-decoration: underline;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1e1e1e; /* Slightly lighter dark for contrast */
+    border-radius: 10px;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    color: #d3d3d3; /* Greyish white */
+}
+
+/* Skills Grid */
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    color: #d3d3d3; /* Greyish white */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #ffffff;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background-color: #d3d3d3; /* Greyish white */
+    color: #121212;
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 50px 20px;
+}
+
+.experience-section h2 {
+    font-size: 2em;
+    color: #d3d3d3; /* Greyish white */
+}
+
+.experience-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    color: #ffffff;
+}
+
+.experience-card:hover {
+    transform: scale(1.05);
+    background-color: #d3d3d3; /* Greyish white */
+    color: #121212;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #181818;
+    color: #bbb;
+}
+/* Page Transition */
+.document-transition {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.document-transition.zoom-out {
+    transform: scale(0.8);
+}
+/* Zoom-Out Transition */
+.zoom-out {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Fade-In Transition */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+    height: 100%; /* Or set a fixed height */
+  }
+  
+  /* SLIDER */
+  
+  .CSSgal .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+  }
+  
+  /* SLIDES */
+  
+  .CSSgal .slider > * {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+  }
+  
+  /* PREV/NEXT, CONTAINERS & ANCHORS */
+  
+  .CSSgal .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+  }
+  
+  .CSSgal .prevNext > div+div {
+    visibility: hidden; /* Hide all but first P/N container */
+  }
+  
+  .CSSgal .prevNext a {
+    background: #fff;
+    position: absolute;
+    width:       60px;
+    height:      60px;
+    line-height: 60px; /* If you want to place numbers */
+    text-align: center;
+    opacity: 0.7;
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+  }
+  .CSSgal .prevNext a:hover {
+    opacity: 1;
+  }
+  .CSSgal .prevNext a+a {
+    left: auto;
+    right: 0;
+  }
+  
+  /* NAVIGATION */
+  
+  .CSSgal .bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .CSSgal .bullets > a {
+    display: inline-block;
+    width:       30px;
+    height:      30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+            transition: 0.3s;
+  }
+  .CSSgal .bullets > a+a {
+    background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+  }
+  .CSSgal .bullets > a:hover {
+    background: rgba(255, 255, 255, 0.7) !important;
+  }
+  
+  /* NAVIGATION BUTTONS */
+  /* ALL: */
+  .CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+  /* ACTIVE */
+  #s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+  #s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+  #s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+  #s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+  /* More slides? Add here more rules */
+  
+  /* PREV/NEXT CONTAINERS VISIBILITY */
+  /* ALL: */
+  .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+  /* ACTIVE: */
+  #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+  #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+  #s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+  #s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+  /* More slides? Add here more rules */
+  
+  /* SLIDER ANIMATION POSITIONS */
+  
+  #s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+  #s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+  #s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+  #s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+  /* More slides? Add here more rules */
+  
+  
+  /* YOU'RE THE DESIGNER! 
+     ____________________
+     All above was mainly to get it working :)
+     CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+  
+  .CSSgal{
+    color: #fff;  
+    text-align: center;
+  }
+  .CSSgal .slider h2 {
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+  }
+  .CSSgal a {
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+  }
