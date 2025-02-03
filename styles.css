@@ -103,7 +103,7 @@
 .grid-item-right img {
     float: right;
     
-    height:450px;
+    height:550px;
 }
 
 .grid-item-left {
@@ -128,8 +128,8 @@
 }
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #121212; /* Dark mode background */
-    color: #ffffff; /* Light text */
+    background-color: #121212;
+    color: #ffffff; 
 }
 
 #nav {
@@ -147,7 +147,7 @@ body {
 }
 
 #nav li a:hover {
-    color: #d3d3d3; /* Greyish white */
+    color: #d3d3d3; 
     text-decoration: underline;
 }
 
@@ -155,13 +155,13 @@ body {
 .about-section {
     text-align: center;
     padding: 50px 20px;
-    background: #1e1e1e; /* Slightly lighter dark for contrast */
+    background: #1e1e1e; 
     border-radius: 10px;
 }
 
 .about-section h1 {
     font-size: 2.5em;
-    color: #d3d3d3; /* Greyish white */
+    color: #d3d3d3;
 }
 
 /* Skills Grid */
@@ -172,7 +172,7 @@ body {
 
 .skills-section h2 {
     font-size: 2em;
-    color: #d3d3d3; /* Greyish white */
+    color: #d3d3d3;
 }
 
 .skills-grid {
@@ -194,7 +194,7 @@ body {
 
 .skill:hover {
     transform: scale(1.1);
-    background-color: #d3d3d3; /* Greyish white */
+    background-color: #d3d3d3; 
     color: #121212;
 }
 
@@ -205,7 +205,7 @@ body {
 
 .experience-section h2 {
     font-size: 2em;
-    color: #d3d3d3; /* Greyish white */
+    color: #d3d3d3; 
 }
 
 .experience-card {
@@ -219,7 +219,7 @@ body {
 
 .experience-card:hover {
     transform: scale(1.05);
-    background-color: #d3d3d3; /* Greyish white */
+    background-color: #d3d3d3; 
     color: #121212;
 }
 
@@ -261,10 +261,6 @@ body {
         opacity: 1;
     }
 }
-/*
-PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
-http://stackoverflow.com/a/34696029/383904
-*/
 
 .CSSgal {
     position: relative;
@@ -294,7 +290,7 @@ http://stackoverflow.com/a/34696029/383904
     background-size: cover;
   }
   
-  /* PREV/NEXT, CONTAINERS & ANCHORS */
+
   
   .CSSgal .prevNext {
     position: absolute;
@@ -305,7 +301,7 @@ http://stackoverflow.com/a/34696029/383904
   }
   
   .CSSgal .prevNext > div+div {
-    visibility: hidden; /* Hide all but first P/N container */
+    visibility: hidden; 
   }
   
   .CSSgal .prevNext a {
@@ -313,7 +309,7 @@ http://stackoverflow.com/a/34696029/383904
     position: absolute;
     width:       60px;
     height:      60px;
-    line-height: 60px; /* If you want to place numbers */
+    line-height: 60px; 
     text-align: center;
     opacity: 0.7;
     -webkit-transition: 0.3s;
@@ -352,45 +348,35 @@ http://stackoverflow.com/a/34696029/383904
             transition: 0.3s;
   }
   .CSSgal .bullets > a+a {
-    background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+    background: rgba(255, 255, 255, 0.5);
   }
   .CSSgal .bullets > a:hover {
     background: rgba(255, 255, 255, 0.7) !important;
   }
   
-  /* NAVIGATION BUTTONS */
-  /* ALL: */
+
   .CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
-  /* ACTIVE */
+
   #s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
   #s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
   #s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
   #s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
-  /* More slides? Add here more rules */
+
   
-  /* PREV/NEXT CONTAINERS VISIBILITY */
-  /* ALL: */
+
   .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
-  /* ACTIVE: */
+
   #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
   #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
   #s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
   #s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
-  /* More slides? Add here more rules */
-  
-  /* SLIDER ANIMATION POSITIONS */
+
   
   #s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
   #s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
   #s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
   #s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
-  /* More slides? Add here more rules */
-  
-  
-  /* YOU'RE THE DESIGNER! 
-     ____________________
-     All above was mainly to get it working :)
-     CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
   
   .CSSgal{
     color: #fff;  
@@ -408,3 +394,7 @@ http://stackoverflow.com/a/34696029/383904
     color: rgba(0,0,0,0.8);
     text-decoration: none;
   }
+.contact-info{
+    padding: 25px;
+}
+  
