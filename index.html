@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Chekkori — Developer & Designer</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <script src="javaScript.js" defer></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">YC<span class="logo-dot">.</span></a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="works.html" class="nav-link">Works</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mob-link">Home</a>
+            <a href="about.html" class="mob-link">About</a>
+            <a href="works.html" class="mob-link">Works</a>
+            <a href="contact.html" class="mob-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-bg-lines">
+                <div class="hline"></div><div class="hline"></div><div class="hline"></div>
+                <div class="hline"></div><div class="hline"></div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-eyebrow reveal-up">Software Developer & Designer</p>
+                <h1 class="hero-name reveal-up delay-1">
+                    <span class="name-line">Youssef</span>
+                    <span class="name-line accent-outline">Chekkori<span class="hero-dot">.</span></span>
+                </h1>
+                <p class="hero-sub reveal-up delay-2">
+                    Full-stack engineer with a designer's eye — building scalable 
+                    products that feel as good as they perform.
+                </p>
+                <div class="hero-actions reveal-up delay-3">
+                    <a href="works.html" class="btn-primary">View Projects</a>
+                    <a href="about.html" class="btn-ghost">About me →</a>
+                </div>
+            </div>
+            <div class="hero-badge reveal-up delay-2">
+                <div class="badge-ring">
+                    <svg viewBox="0 0 120 120" class="badge-svg">
+                        <path id="badgeCircle" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none"/>
+                        <text>
+                            <textPath href="#badgeCircle" startOffset="0%">
+                                AUGUSTANA COLLEGE · CS + DS + DESIGN · 
+                            </textPath>
+                        </text>
+                    </svg>
+                    <div class="badge-center">YC</div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- STATS STRIP -->
+        <section class="stats-strip reveal-up">
+            <div class="stat">
+                <span class="stat-num" data-target="250">0</span><span class="stat-plus">+</span>
+                <p>Client Sites</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num" data-target="3">0</span>
+                <p>Majors</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num" data-target="84">0</span><span class="stat-plus">%</span>
+                <p>ML Accuracy (F1 Predictor)</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num" data-target="70">0</span><span class="stat-plus">%</span>
+                <p>Workflow Time Saved</p>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section class="projects-section">
+            <div class="section-header">
+                <span class="section-tag">Selected Work</span>
+                <h2 class="section-title reveal-up">What I've<br><em>been building</em></h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card card-large reveal-card">
+                    <div class="card-inner">
+                        <div class="card-meta">
+                            <span class="card-tag">AI / ML</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3>F1 Podium Probability Predictor</h3>
+                        <p>End-to-end ML pipeline predicting Lewis Hamilton's podium probability using 5 seasons of real race data. Logistic Regression achieved 84.21% accuracy and 0.869 ROC AUC.</p>
+                        <div class="card-stack">
+                            <span>Python</span><span>XGBoost</span><span>Scikit-Learn</span><span>FastF1 API</span>
+                        </div>
+                        <a href="works.html" class="card-link">Explore →</a>
+                    </div>
+                    <div class="card-accent card-accent-1"></div>
+                </article>
+
+                <article class="project-card reveal-card delay-1">
+                    <div class="card-inner">
+                        <div class="card-meta">
+                            <span class="card-tag">Full-Stack / AI</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3>AI Learning Assistant Dashboard</h3>
+                        <p>MERN stack roadmap platform with Gemini API integration. Smart prompt templates deliver context-aware learning capsules to each user.</p>
+                        <div class="card-stack">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Gemini API</span>
+                        </div>
+                        <a href="works.html" class="card-link">Explore →</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal-card delay-2">
+                    <div class="card-inner">
+                        <div class="card-meta">
+                            <span class="card-tag">Automation</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3>Closet2Closet Workflow Automation</h3>
+                        <p>Replaced a fully manual foster care package system with Google Apps Script automation — cutting fulfillment prep time by 70%.</p>
+                        <div class="card-stack">
+                            <span>Google Apps Script</span><span>Google Forms</span>
+                        </div>
+                        <a href="works.html" class="card-link">Explore →</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal-card delay-1">
+                    <div class="card-inner">
+                        <div class="card-meta">
+                            <span class="card-tag">Desktop App</span>
+                            <span class="card-year">2024</span>
+                        </div>
+                        <h3>HAM Radio Simulator</h3>
+                        <p>JavaFX Morse code training simulator with AI-generated scenarios, multiplayer server comms, frequency tuning, and JSON save/load logic.</p>
+                        <div class="card-stack">
+                            <span>Java</span><span>JavaFX</span><span>AI Scenarios</span>
+                        </div>
+                        <a href="works.html" class="card-link">Explore →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SKILLS MARQUEE -->
+        <section class="marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-inner">
+                    <div class="marquee-item"><i class="devicon-python-plain"></i><span>Python</span></div>
+                    <div class="marquee-item"><i class="devicon-react-original"></i><span>React.js</span></div>
+                    <div class="marquee-item"><i class="devicon-nodejs-plain"></i><span>Node.js</span></div>
+                    <div class="marquee-item"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></div>
+                    <div class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.75 6v12L12 24l10.25-6V6L12 0zm0 2.17l8.25 4.83v9.67L12 21.5l-8.25-4.83V7L12 2.17z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Gemini API</span></div>
+                    <div class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h7l5 5v8l-5 5H3V3zm4 4v10h3l3-3V10l-3-3H7zm10-4h4v18h-4V7l-2-2V3h2z"/></svg><span>XGBoost</span></div>
+                    <div class="marquee-item"><i class="devicon-figma-plain"></i><span>Figma</span></div>
+                    <div class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4.9 2.5L3 5.2l3.7 6.8L3 18.8l1.9 2.7L12 12 4.9 2.5zm7.1 0l7.1 9.5L12 21.5l7.1-9.5-7.1-9.5z"/></svg><span>Scikit-Learn</span></div>
+                    <div class="marquee-item"><i class="devicon-typescript-plain"></i><span>TypeScript</span></div>
+                    <div class="marquee-item"><i class="devicon-azuresqldatabase-plain"></i><span>SQL</span></div>
+                    <div class="marquee-item"><i class="devicon-photoshop-plain"></i><span>Adobe Suite</span></div>
+                    <div class="marquee-item"><i class="devicon-googlecloud-plain"></i><span>Google Cloud</span></div>
+                    <div class="marquee-item"><i class="devicon-amazonwebservices-plain-wordmark"></i><span>AWS</span></div>
+                    <!-- duplicate for seamless loop -->
+                    <div class="marquee-item"><i class="devicon-python-plain"></i><span>Python</span></div>
+                    <div class="marquee-item"><i class="devicon-react-original"></i><span>React.js</span></div>
+                    <div class="marquee-item"><i class="devicon-nodejs-plain"></i><span>Node.js</span></div>
+                    <div class="marquee-item"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></div>
+                    <div class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.75 6v12L12 24l10.25-6V6L12 0zm0 2.17l8.25 4.83v9.67L12 21.5l-8.25-4.83V7L12 2.17z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Gemini API</span></div>
+                    <div class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h7l5 5v8l-5 5H3V3zm4 4v10h3l3-3V10l-3-3H7zm10-4h4v18h-4V7l-2-2V3h2z"/></svg><span>XGBoost</span></div>
+                    <div class="marquee-item"><i class="devicon-figma-plain"></i><span>Figma</span></div>
+                    <div class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4.9 2.5L3 5.2l3.7 6.8L3 18.8l1.9 2.7L12 12 4.9 2.5zm7.1 0l7.1 9.5L12 21.5l7.1-9.5-7.1-9.5z"/></svg><span>Scikit-Learn</span></div>
+                    <div class="marquee-item"><i class="devicon-typescript-plain"></i><span>TypeScript</span></div>
+                    <div class="marquee-item"><i class="devicon-azuresqldatabase-plain"></i><span>SQL</span></div>
+                    <div class="marquee-item"><i class="devicon-photoshop-plain"></i><span>Adobe Suite</span></div>
+                    <div class="marquee-item"><i class="devicon-googlecloud-plain"></i><span>Google Cloud</span></div>
+                    <div class="marquee-item"><i class="devicon-amazonwebservices-plain-wordmark"></i><span>AWS</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA STRIP -->
+        <section class="cta-section reveal-up">
+            <div class="cta-inner">
+                <h2>Let's build something<br><em>worth talking about.</em></h2>
+                <a href="contact.html" class="btn-primary">Start a conversation</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="logo">YC<span class="logo-dot">.</span></span>
+            <p>© 2025 Youssef Chekkori</p>
+            <div class="footer-links">
+                <a href="https://github.com/chekYoussef" target="_blank">GitHub</a>
+                <a href="mailto:youssefchekkori@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

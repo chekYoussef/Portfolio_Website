@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Youssef Chekkori</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javaScript.js" defer></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">YC<span class="logo-dot">.</span></a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="works.html" class="nav-link">Works</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mob-link">Home</a>
+            <a href="about.html" class="mob-link">About</a>
+            <a href="works.html" class="mob-link">Works</a>
+            <a href="contact.html" class="mob-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="hero-eyebrow reveal-up">About Me</p>
+            <h1 class="page-title reveal-up delay-1">The person<br>behind the <em>code.</em></h1>
+        </section>
+
+        <section class="about-body">
+            <div class="about-grid">
+                <div class="about-text reveal-up">
+                    <p class="about-lead">I'm Youssef Chekkori — a full-stack developer and designer pursuing a triple major in Computer Science, Data Science, and Graphic Design at Augustana College.</p>
+                    <p>I build things that sit at the intersection of engineering and design. Not just functional software, but products that feel considered — where every interaction has been thought through. My background spans AI integration, MERN stack development, ML engineering, and UI/UX design, which means I can own a feature from whiteboard to deployed product.</p>
+                    <p>Currently serving as Tech Lead at the EDGE Center where I architect platforms, mentor interns, and ship real software for real users.</p>
+                    <a href="img/Resume-Chekkori-Youssef.pdf" class="btn-primary" target="_blank">Download Résumé</a>
+                </div>
+                <div class="about-aside reveal-up delay-2">
+                    <div class="info-card">
+                        <div class="info-row"><span class="info-label">Location</span><span>Rock Island, IL</span></div>
+                        <div class="info-row"><span class="info-label">Education</span><span>Augustana College, 2027</span></div>
+                        <div class="info-row"><span class="info-label">Majors</span><span>CS · Data Science · Graphic Design</span></div>
+                        <div class="info-row"><span class="info-label">Email</span><a href="mailto:youssefchekkori@gmail.com">youssefchekkori@gmail.com</a></div>
+                        <div class="info-row"><span class="info-label">GitHub</span><a href="https://github.com/chekYoussef" target="_blank">chekYoussef</a></div>
+                    </div>
+                    <div class="cert-list">
+                        <h4>Certifications</h4>
+                        <div class="cert-item">OpenAI / DeepLearning.AI — ChatGPT Prompt Engineering</div>
+                        <div class="cert-item">Google Cloud — Generative AI Fundamentals</div>
+                        <div class="cert-item">AWS — Cloud Practitioner Essentials</div>
+                        <div class="cert-item">LinkedIn Learning — Git & GitHub</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section-about">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title reveal-up">Technical <em>Arsenal</em></h2>
+            </div>
+            <div class="skills-categories reveal-up delay-1">
+                <div class="skill-cat">
+                    <h4>Languages</h4>
+                    <div class="skill-pills">
+                        <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>SQL</span>
+                    </div>
+                </div>
+                <div class="skill-cat">
+                    <h4>Web & Frameworks</h4>
+                    <div class="skill-pills">
+                        <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-cat">
+                    <h4>AI / ML</h4>
+                    <div class="skill-pills">
+                        <span>Gemini API</span><span>Scikit-Learn</span><span>XGBoost</span><span>Pandas</span><span>NumPy</span>
+                    </div>
+                </div>
+                <div class="skill-cat">
+                    <h4>Design & Tools</h4>
+                    <div class="skill-pills">
+                        <span>Figma</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span>
+                    </div>
+                </div>
+                <div class="skill-cat">
+                    <h4>Cloud & DevOps</h4>
+                    <div class="skill-pills">
+                        <span>AWS</span><span>Google Cloud</span><span>Git</span><span>Postman</span><span>cPanel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section-about">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title reveal-up">Where I've <em>worked</em></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-card">
+                    <div class="timeline-left">
+                        <span class="tl-year">Summer 2025</span>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="timeline-right">
+                        <h3>Tech Lead / Software Engineering Intern</h3>
+                        <p class="tl-company">EDGE Center, Augustana College</p>
+                        <p>Led development of the AI Learning Assistant using MERN + Gemini API. Built backend with Express.js & MongoDB. Managed OAuth auth, Agile team, code reviews, and intern mentorship. Filled in for project managers on delivery.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-card delay-1">
+                    <div class="timeline-left">
+                        <span class="tl-year">Summer 2025</span>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="timeline-right">
+                        <h3>Software Developer</h3>
+                        <p class="tl-company">Closet2Closet (Nonprofit via EDGE)</p>
+                        <p>Automated the entire foster care package fulfillment workflow using Google Apps Script — reducing prep time by 70% and eliminating manual processing.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-card delay-2">
+                    <div class="timeline-left">
+                        <span class="tl-year">Sept 2024 – Present</span>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="timeline-right">
+                        <h3>Web Developer</h3>
+                        <p class="tl-company">Web Guild, Augustana College</p>
+                        <p>Maintain 250+ live client websites. Translated 50+ client requests into production-ready sites using Figma and Adobe Suite. Cut delivery time by 30% through streamlined feedback loops.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-card delay-2">
+                    <div class="timeline-left">
+                        <span class="tl-year">May–Aug 2024</span>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="timeline-right">
+                        <h3>Creative & Technical Lead</h3>
+                        <p class="tl-company">EDGE Center Mock Company — 🏆 3 Awards</p>
+                        <p>Led branding, logos, website, and marketing materials. Won Best Overall Marketing Framework alongside 2 additional awards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="logo">YC<span class="logo-dot">.</span></span>
+            <p>© 2025 Youssef Chekkori</p>
+            <div class="footer-links">
+                <a href="https://github.com/chekYoussef" target="_blank">GitHub</a>
+                <a href="mailto:youssefchekkori@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works — Youssef Chekkori</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javaScript.js" defer></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">YC<span class="logo-dot">.</span></a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="works.html" class="nav-link active">Works</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mob-link">Home</a>
+            <a href="about.html" class="mob-link">About</a>
+            <a href="works.html" class="mob-link">Works</a>
+            <a href="contact.html" class="mob-link">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="hero-eyebrow reveal-up">Portfolio</p>
+            <h1 class="page-title reveal-up delay-1">Projects I'm<br><em>proud of.</em></h1>
+        </section>
+
+        <!-- ── HORIZONTAL CAROUSEL ───────────────────────── -->
+        <section class="pdf-carousel-section reveal-up delay-1">
+            <div class="pdf-carousel-wrapper">
+
+                <!-- Left info panel — 5 slides total -->
+                <div class="pdf-info-panel" id="pdfInfoPanel">
+
+                    <div class="pdf-info-slide active" data-slide="0">
+                        <span class="card-tag">Full-Stack · AI</span>
+                        <h3>AI Learning Assistant — Live Demo</h3>
+                        <p>MERN stack roadmap platform with Gemini API integration, adaptive learning capsules, and Google OAuth authentication.</p>
+                        <div class="card-stack"><span>React.js</span><span>Node.js</span><span>Gemini API</span></div>
+                    </div>
+
+                    <div class="pdf-info-slide" data-slide="1">
+                        <span class="card-tag">AI / ML</span>
+                        <h3>F1 Podium Probability Predictor</h3>
+                        <p>End-to-end ML pipeline with 84.21% accuracy and 0.869 ROC AUC using Logistic Regression, Random Forest & XGBoost over 5 seasons of F1 data.</p>
+                        <div class="card-stack"><span>Python</span><span>XGBoost</span><span>FastF1 API</span></div>
+                    </div>
+
+                    <div class="pdf-info-slide" data-slide="2">
+                        <span class="card-tag">Web Development</span>
+                        <h3>Website Development — Web Guild</h3>
+                        <p>Production-ready websites for 250+ clients translated from Figma briefs using HTML/CSS and Adobe Suite.</p>
+                        <div class="card-stack"><span>HTML/CSS</span><span>Figma</span><span>Adobe Suite</span></div>
+                    </div>
+                    <div class="pdf-info-slide" data-slide="2">
+                        <span class="card-tag">Web</span>
+                        <h3>Educational HAM Radio Simulator</h3>
+                        <p>JavaFX Morse code training app with AI-generated scenarios, real-time multiplayer server comms, frequency tuning, and JSON save/load logic.</p>
+                        <div class="card-stack"><span>Java</span><span>JavaFX</span><span>Multiplayer</span><span>JSON</span></div>
+                    </div>
+
+                    <div class="pdf-info-slide" data-slide="3">
+                        <span class="card-tag">Branding 🏆</span>
+                        <h3>Company Design Framework</h3>
+                        <p>Full branding framework — logos, website, and marketing materials. Won Best Overall Marketing Framework + 2 additional awards.</p>
+                        <div class="card-stack"><span>Figma</span><span>Illustrator</span><span>InDesign</span></div>
+                    </div>
+
+                    <div class="pdf-info-slide" data-slide="4">
+                        <span class="card-tag">Web Design</span>
+                        <h3>Grace Lutheran Church Website</h3>
+                        <p>Full website redesign with layout, branding, and UX improvements for a live client through the Web Guild.</p>
+                        <div class="card-stack"><span>HTML/CSS</span><span>Figma</span><span>cPanel</span></div>
+                    </div>
+                     <div class="pdf-info-slide" data-slide="4">
+                        <span class="card-tag">Design Work</span>
+                        <h3>F1 History Zine</h3>
+                        <p></p>
+                        <div class="card-stack"><span>Photoshop</span><span>InDesign</span><span>Illustrator</span></div>
+                    </div>
+                    <div class="pdf-info-slide" data-slide="4">
+                        <span class="card-tag">Poster Design Work</span>
+                        <h3>More Design Work</h3>
+                        <p></p>
+                        <div class="card-stack"><span>Photoshop</span><span>InDesign</span><span>Illustrator</span></div>
+                    </div>
+
+                </div>
+
+                <!-- Right carousel viewport -->
+                <div class="pdf-viewport">
+                    <div class="pdf-track" id="pdfTrack">
+
+                        <!-- Slide 0 — Video -->
+                        <div class="pdf-slide">
+                            <video controls playsinline preload="metadata">
+                                <source src="img/EdgeAiDemo.mov" type="video/mp4">
+                                <source src="img/EdgeAiDemo.mov" type="video/quicktime">
+                                <p>Your browser doesn't support this video.</p>
+                            </video>
+                        </div>
+
+                        <!-- Slide 1 — F1 PDF -->
+                        <div class="pdf-slide">
+                            <embed src="img/f1_Predicter.pdf" type="application/pdf" />
+                        </div>
+
+                        <!-- Slide 2 — Web Guild PDF -->
+                        <div class="pdf-slide">
+                            <embed src="img/website-guild.pdf" type="application/pdf" />
+                        </div>
+                        <div class="pdf-slide">
+                            <embed src="img/hamradioproject.pdf" type="application/pdf" />
+                        </div>
+
+                        <!-- Slide 3 — Company Framework PDF -->
+                        <div class="pdf-slide">
+                            <embed src="img/website.pdf" type="application/pdf" />
+                        </div>
+
+                        <!-- Slide 4 — Grace Lutheran PDF -->
+                        <div class="pdf-slide">
+                            <embed src="img/Grace_Lutheran_Church_website.pdf" type="application/pdf" />
+                        </div>
+                        <div class="pdf-slide">
+                            <embed src="img/Chekkori_Youssef_f1-zine_version2.pdf" type="application/pdf" />
+                        </div>
+                        <div class="pdf-slide">
+                            <embed src="img/pokerFace.pdf" type="application/pdf" />
+                        </div>
+
+                    </div>
+
+                    <button class="pdf-arrow pdf-prev" id="pdfPrev" aria-label="Previous">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+                    <button class="pdf-arrow pdf-next" id="pdfNext" aria-label="Next">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Dots + counter — 5 dots matching 5 slides -->
+            <div class="pdf-nav-row">
+                <div class="pdf-dots" id="pdfDots">
+                    <button class="pdf-dot active" data-index="0"></button>
+                    <button class="pdf-dot" data-index="1"></button>
+                    <button class="pdf-dot" data-index="2"></button>
+                    <button class="pdf-dot" data-index="3"></button>
+                    <button class="pdf-dot" data-index="4"></button>
+                    <button class="pdf-dot" data-index="5"></button>
+                    <button class="pdf-dot" data-index="6"></button>
+                    <button class="pdf-dot" data-index="7"></button>
+                </div>
+                <span class="pdf-counter"><span id="pdfCurrent">1</span> / <span id="pdfTotal">6</span></span>
+            </div>
+        </section>
+
+        <!-- ── PROJECT LIST ──────────────────────────────── -->
+        <section class="works-list-section">
+            <div class="section-header">
+                <span class="section-tag">All Projects</span>
+                <h2 class="section-title reveal-up">What I've <em>built</em></h2>
+            </div>
+
+            <div class="filter-tabs reveal-up delay-1">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+
+            <div class="works-grid">
+
+                <article class="work-card reveal-card" data-category="ai">
+                    <div class="work-body">
+                        <div class="work-number">01</div>
+                        <div class="work-tags"><span class="card-tag">AI / ML</span><span class="card-year">2025</span></div>
+                        <h3>F1 Podium Probability Predictor</h3>
+                        <p>End-to-end ML pipeline predicting Lewis Hamilton's podium probability using 5 seasons of race data. Achieved 84.21% accuracy and 0.869 ROC AUC across Logistic Regression, Random Forest, and XGBoost models.</p>
+                        <div class="card-stack"><span>Python</span><span>XGBoost</span><span>Scikit-Learn</span><span>FastF1 API</span><span>Matplotlib</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card reveal-card delay-1" data-category="fullstack ai">
+                    <div class="work-body">
+                        <div class="work-number">02</div>
+                        <div class="work-tags"><span class="card-tag">Full-Stack · AI</span><span class="card-year">2025</span></div>
+                        <h3>AI Learning Assistant Dashboard</h3>
+                        <p>MERN stack roadmap platform with Gemini API integration. Smart prompt templates deliver context-aware video learning capsules. Built OAuth auth, MongoDB tracking, and managed full Agile sprints.</p>
+                        <div class="card-stack"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Gemini API</span><span>Treant.js</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card reveal-card delay-2" data-category="automation">
+                    <div class="work-body">
+                        <div class="work-number">03</div>
+                        <div class="work-tags"><span class="card-tag">Automation</span><span class="card-year">2025</span></div>
+                        <h3>Closet2Closet Fulfillment Automation</h3>
+                        <p>Replaced a fully manual foster care workflow with Google Apps Script — processing form submissions, generating slips, and organizing volunteer queues. Cut prep time by 70%.</p>
+                        <div class="card-stack"><span>Google Apps Script</span><span>Google Forms</span><span>Automation</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card reveal-card" data-category="fullstack">
+                    <div class="work-body">
+                        <div class="work-number">04</div>
+                        <div class="work-tags"><span class="card-tag">Desktop App</span><span class="card-year">2024</span></div>
+                        <h3>Educational HAM Radio Simulator</h3>
+                        <p>JavaFX Morse code training app with AI-generated scenarios, real-time multiplayer server comms, frequency tuning, and JSON save/load logic.</p>
+                        <div class="card-stack"><span>Java</span><span>JavaFX</span><span>Multiplayer</span><span>JSON</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card reveal-card delay-1" data-category="fullstack ai">
+                    <div class="work-body">
+                        <div class="work-number">05</div>
+                        <div class="work-tags"><span class="card-tag">App / Scraping</span><span class="card-year">2024</span></div>
+                        <h3>Product Recommender App</h3>
+                        <p>Python GUI that scrapes Amazon via Selenium and Beautiful Soup, then ranks products by reviews, ratings, and pricing into exportable CSVs. Built with kivyMD for a native feel.</p>
+                        <div class="card-stack"><span>Python</span><span>Selenium</span><span>Beautiful Soup</span><span>kivyMD</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card reveal-card delay-2" data-category="design">
+                    <div class="work-body">
+                        <div class="work-number">06</div>
+                        <div class="work-tags"><span class="card-tag">Design / Branding</span><span class="card-year">2024</span></div>
+                        <h3>EDGE Center Branding Framework 🏆</h3>
+                        <p>Led creative and technical team to deliver full branding, logos, website, and marketing materials. Won Best Overall Marketing Framework + 2 additional awards.</p>
+                        <div class="card-stack"><span>Figma</span><span>Illustrator</span><span>InDesign</span><span>Photoshop</span></div>
+                    </div>
+                </article>
+
+                <article class="work-card reveal-card" data-category="design">
+                    <div class="work-body">
+                        <div class="work-number">07</div>
+                        <div class="work-tags"><span class="card-tag">Web Design</span><span class="card-year">2024</span></div>
+                        <h3>250+ Client Websites — Web Guild</h3>
+                        <p>Designed, coded, and maintained 250+ live client sites. Translated briefs into production-ready pages using Figma, Adobe Suite, and HTML/CSS via cPanel hosting.</p>
+                        <div class="card-stack"><span>HTML/CSS</span><span>Figma</span><span>Adobe Suite</span><span>cPanel</span></div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="logo">YC<span class="logo-dot">.</span></span>
+            <p>© 2025 Youssef Chekkori</p>
+            <div class="footer-links">
+                <a href="https://github.com/chekYoussef" target="_blank">GitHub</a>
+                <a href="mailto:youssefchekkori@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
